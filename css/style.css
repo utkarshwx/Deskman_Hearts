@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #13C5DD;
+    --primary: #0C5C4F;
     --secondary: #354F8E;
     --light: #EFF5F9;
     --dark: #1D2A4D;
@@ -97,9 +97,11 @@
 }
 
 .hero-header {
-    background: url(../img/hero.jpg) top right no-repeat;
-    background-size: cover;
+    background: url(../img/Untitled\ design.jpg) top right no-repeat;
+    background-size: cover; /* Adjust the percentage to reduce zoom */
 }
+
+
 
 .service-item {
     position: relative;
