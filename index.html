@@ -126,7 +126,8 @@
 
 
     <!-- Hero Start -->
-    <div class="container-fluid py-5 mb-5 hero-header" style="background: url('img/dark.jpg') no-repeat center center; background-size: cover;">
+    <div class="container-fluid py-5 mb-5 hero-header"
+        style="background: url('img/dark.jpg') no-repeat center center; background-size: cover;">
         <div class="container py-5">
             <div class="row justify-content-start">
                 <div class="col-lg-8 text-center text-lg-start">
@@ -140,7 +141,7 @@
             </div>
         </div>
     </div>
-    
+
     <!-- Hero End -->
 
 
@@ -150,7 +151,8 @@
             <div class="row gx-5">
                 <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 500px;">
                     <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100 rounded" src="img/Untitled-1.jpg" style="object-fit: cover;">
+                        <img class="position-absolute w-100 h-100 rounded" src="img/Untitled-1.jpg"
+                            style="object-fit: cover;">
                     </div>
                 </div>
                 <div class="col-lg-7">
@@ -256,19 +258,17 @@
     <div class="container-fluid bg-primary my-5 py-5" id="Appointment">
         <div class="container py-5">
             <div class="row gx-5">
-                <div class="col-lg-6 mb-5 mb-lg-0">
-                    <div class="mb-4">
-                        <h5 class="d-inline-block text-white text-uppercase border-bottom border-5">Appointment</h5>
-                        <h1 class="display-4">Make An Appointment For Your Family</h1>
+                <div class="mb-4 mb-lg-0">
+                    <div class="mb-5">
+                        <div class="mb-4">
+                            <h5 class="d-inline-block text-white text-uppercase border-bottom border-5">Appointment</h5>
+                            <h1 class="display-4">Make an Appointment with Upbeatheart</h1>
+                        </div>
+                        <p class="text-white mb-5">Schedule a Consultation with Dr. SKM today! <br>
+                            Prioritize your child's heart health. Book Now!</p>
                     </div>
-                    <p class="text-white mb-5">Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd ipsum.
-                        Dolor ea et dolore et at sea ea at dolor, justo ipsum duo rebum sea invidunt voluptua. Eos vero
-                        eos vero ea et dolore eirmod et. Dolores diam duo invidunt lorem. Elitr ut dolores magna sit.
-                        Sea dolore sanctus sed et. Takimata takimata sanctus sed.</p>
-                    <a class="btn btn-dark rounded-pill py-3 px-5 me-3" href="">Know More</a>
-                    <a class="btn btn-outline-dark rounded-pill py-3 px-5" href="">Read More</a>
-                </div>
-                <div class="col-lg-6">
+                    
+
                     <!-- Cal inline embed code begins -->
                     <div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline"></div>
                     <script type="text/javascript">
@@ -277,11 +277,11 @@
 
                         Cal.ns.appointmentbooking("inline", {
                             elementOrSelector: "#my-cal-inline",
-                            config: { "layout": "month_view", "theme": "light" },
+                            config: { "layout": "month_view" },
                             calLink: "dr.-soumya-kanti-mohapatra-wveueu/appointmentbooking",
                         });
 
-                        Cal.ns.appointmentbooking("ui", { "theme": "light", "cssVarsPerTheme": { "light": { "cal-brand": "#191919" }, "dark": { "cal-brand": "#ffffff" } }, "hideEventTypeDetails": true, "layout": "month_view" });
+                        Cal.ns.appointmentbooking("ui", { "hideEventTypeDetails": false, "layout": "month_view" });
                     </script>
                     <!-- Cal inline embed code ends -->
                 </div>

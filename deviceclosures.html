@@ -220,35 +220,33 @@
 
 
     <!-- Appointment Start -->
-    <div class="container-fluid bg-primary my-5 py-5">
+    <div class="container-fluid bg-primary my-5 py-5" id="Appointment">
         <div class="container py-5">
             <div class="row gx-5">
-                <div class="col-lg-6 mb-5 mb-lg-0">
-                    <div class="mb-4">
-                        <h5 class="d-inline-block text-white text-uppercase border-bottom border-5">Appointment</h5>
-                        <h1 class="display-4">Make An Appointment For Your Family</h1>
+                <div class="mb-4 mb-lg-0">
+                    <div class="mb-5">
+                        <div class="mb-4">
+                            <h5 class="d-inline-block text-white text-uppercase border-bottom border-5">Appointment</h5>
+                            <h1 class="display-4">Make an Appointment with Upbeatheart</h1>
+                        </div>
+                        <p class="text-white mb-5">Schedule a Consultation with Dr. SKM today! <br>
+                            Prioritize your child's heart health. Book Now!</p>
                     </div>
-                    <p class="text-white mb-5">Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd ipsum.
-                        Dolor ea et dolore et at sea ea at dolor, justo ipsum duo rebum sea invidunt voluptua. Eos vero
-                        eos vero ea et dolore eirmod et. Dolores diam duo invidunt lorem. Elitr ut dolores magna sit.
-                        Sea dolore sanctus sed et. Takimata takimata sanctus sed.</p>
-                    <a class="btn btn-dark rounded-pill py-3 px-5 me-3" href="">Know More</a>
-                    <a class="btn btn-outline-dark rounded-pill py-3 px-5" href="">Read More</a>
-                </div>
-                <div class="col-lg-6">
+                    
+
                     <!-- Cal inline embed code begins -->
                     <div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline"></div>
                     <script type="text/javascript">
                         (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
-                        Cal("init", "15min", { origin: "https://cal.com" });
+                        Cal("init", "appointmentbooking", { origin: "https://cal.com" });
 
-                        Cal.ns["15min"]("inline", {
+                        Cal.ns.appointmentbooking("inline", {
                             elementOrSelector: "#my-cal-inline",
                             config: { "layout": "month_view" },
-                            calLink: "webx-thedev/15min",
+                            calLink: "dr.-soumya-kanti-mohapatra-wveueu/appointmentbooking",
                         });
 
-                        Cal.ns["15min"]("ui", { "styles": { "branding": { "brandColor": "#000000" } }, "hideEventTypeDetails": true, "layout": "week_view" });
+                        Cal.ns.appointmentbooking("ui", { "hideEventTypeDetails": false, "layout": "month_view" });
                     </script>
                     <!-- Cal inline embed code ends -->
                 </div>
